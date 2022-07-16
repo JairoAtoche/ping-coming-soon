@@ -2,33 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+<body class="body">
+  <header class="header">
+    <img src="" alt="logo" class="header__logo">
+  </header>
+  <main class="main">
+    <article class="suscribe">      
+      <h1 class="suscribe__h1">
+        We are launching soon!
+      </h1>
+      <p class="suscribe__p">
+        Subscribe and get notified
+      </p>
+      <form action="" class="form">
+        <input type="email" placeholder="Your email address..." class="form__input">
+        <button type="submit" class="form__button">Notify me</button>
+      </form>
+      <img src="" alt="illustration dashboard" class="suscribe__img">
+    </article>
+  </main>
+  <footer class="footer">
+    <!-- social networks -->
+    <div class="footer__networks">
+      <a href="https://facebook.com" target="_blank" class="networks__a">
+        <i class="fa-brands fa-facebook-f networks__icon"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="networks__a">
+        <i class="fa-brands fa-twitter networks__icon"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="networks__a">      
+        <i class="fa-brands fa-instagram networks__icon"></i>
+      </a>
+    </div>
+    <!-- copyright -->
+    <p class="footer__copyright">
+      &copy; Copyright Ping. All rights reserved.
     </p>
-  </footer>
+    <!-- attribution -->
+    <div class="footer__attribution">
+      <p class="attribution__p">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution__a">Frontend Mentor</a>. 
+        Coded by 
+        <a href="https://github.com/JairoAtoche" target="_blank" class="attribution__a">Jairo Atoche</a>.
+      </p>
+    </div>
+  </footer> 
+  <script src="https://kit.fontawesome.com/50542c19e7.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 </html>
