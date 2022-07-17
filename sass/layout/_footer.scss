@@ -1,0 +1,11 @@
+.footer{
+    &__attribution { 
+        text-align: center;
+    }
+    &__p {
+        font-size: 11px; 
+    }
+    &__a {
+        color: hsl(228, 45%, 44%); 
+    }
+}

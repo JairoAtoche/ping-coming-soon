@@ -1,0 +1,11 @@
+@use '../utilities/mixins' as mixins;
+
+.header {
+    &__logo {
+        display: block;
+        width: 54px;
+        @include mixins.desktop() {
+            width: 86px;
+        }
+    }
+}

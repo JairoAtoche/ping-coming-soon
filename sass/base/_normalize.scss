@@ -1,0 +1,36 @@
+@use  '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+:root {
+    /* Primary colors */
+    --blue: #{map-get(variables.$colors, 'blue')};
+    /* Secondary colors */
+    --pale-blue: #{map-get(variables.$colors, 'pale-blue')};
+    --light-red: #{map-get(variables.$colors, 'light-red')};
+    /* Neutral colors */
+    --gray: #{map-get(variables.$colors, 'gray')};
+    --very-dark-blue: #{map-get(variables.$colors, 'very-dark-blue')};
+    /* Others colors */
+    --white: #{map-get(variables.$colors, 'white')};
+
+    /* Font weight */
+    --light: #{map-get(variables.$weight, 'light')};
+    --semibold: #{map-get(variables.$weight, 'semibold')};
+    --bold: #{map-get(variables.$weight, 'bold')};
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 100vh;
+    @include mixins.caja-flex(column,center,center,39px);
+    background-color: var(--white);
+
+    
+    font-family: variables.$font;
+    font-size: 20px;
+}

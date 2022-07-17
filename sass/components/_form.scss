@@ -1,0 +1,55 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.form {
+    @include mixins.caja-flex(column,center,center,10px);
+    
+    &__input {
+        @include mixins.cuadro-borde(280px,40px);
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--pale-blue);
+        text-indent: 33px;
+
+        &::placeholder {
+            color: var(--pale-blue);
+            font-size: 12px;
+            @include mixins.desktop() {
+                font-size: 16px;
+            }
+        }
+
+        &:focus {
+            border-color: var(--blue);
+            outline: var(--blue);
+        }
+
+        @include mixins.desktop() {
+            @include mixins.cuadro-borde(421px,56px);
+        }      
+        
+    }
+
+    &__button {
+        @include mixins.cuadro-borde(280px,40px);
+        border: none;        
+        background-color: var(--blue);
+
+        text-transform: capitalize;
+        color: var(--white);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--pale-blue);
+        }
+
+        @include mixins.desktop() {
+            @include mixins.cuadro-borde(200px,56px);
+        }
+    }
+
+    @include mixins.desktop() {
+        flex-direction: row
+    }
+}

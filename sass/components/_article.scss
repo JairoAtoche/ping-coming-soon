@@ -1,0 +1,36 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.suscribe {
+    @include mixins.caja-flex(column,center,center);
+    
+    &__h1 {
+        @include mixins.font-properties(var(--light), 22px, var(--gray));
+        @include mixins.desktop() {
+            font-size: min(calc(1vw + 2.1rem), 3rem); //48px
+        }        
+
+        margin-bottom: 17px;
+        
+        &--modifier {
+            color: var(--very-dark-blue);
+        }
+    }
+
+    &__p {
+        @include mixins.font-properties(var(--light), 12px, var(--very-dark-blue));
+        @include mixins.desktop() {
+            font-size: 20px;
+        }
+        margin-bottom: 32px;
+    }
+
+    &__img {
+        display: block;
+        width: 320px;
+        @include mixins.desktop() {
+            max-width: 640px;
+        }
+        margin-top: 69px;
+    }
+}
