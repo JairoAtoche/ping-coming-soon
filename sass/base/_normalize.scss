@@ -27,7 +27,7 @@
 
 .body {
     min-height: 100vh;
-    @include mixins.caja-flex(column,center,center,39px);
+    @include mixins.caja-flex(column,start,center,39px);
     background-color: var(--white);
 
     

@@ -7,9 +7,7 @@
     &__input {
         @include mixins.cuadro-borde(280px,40px);
 
-        border-width: 1px;
-        border-style: solid;
-        border-color: var(--pale-blue);
+        border: 1px solid var(--pale-blue);
         text-indent: 33px;
 
         &::placeholder {
@@ -39,13 +37,17 @@
         text-transform: capitalize;
         color: var(--white);
         cursor: pointer;
+ 
+        box-shadow: 0px 0px 5px 0px var(--blue);
 
         &:hover {
             background-color: var(--pale-blue);
         }
+        
 
         @include mixins.desktop() {
             @include mixins.cuadro-borde(200px,56px);
+            font-size: 16px;
         }
     }
 
