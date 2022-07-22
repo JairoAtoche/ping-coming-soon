@@ -3,13 +3,13 @@
 
 .form {
     @include mixins.caja-flex(column,center,center,10px);
-    
+    align-items: start;
     &__input {
         @include mixins.cuadro-borde(280px,40px);
 
         border: 1px solid var(--pale-blue);
         text-indent: 33px;
-
+        font-size: 12px;
         &::placeholder {
             color: var(--pale-blue);
             font-size: 12px;
@@ -25,10 +25,18 @@
 
         @include mixins.desktop() {
             @include mixins.cuadro-borde(421px,56px);
+            font-size: 16px;
         }      
         
     }
+    &__input--error {
+        border: 1px solid var(--light-red);
+        &:focus {
+            border-color: var(--light-red);
+            outline:var(--light-red);
+        }
 
+    }
     &__button {
         @include mixins.cuadro-borde(280px,40px);
         border: none;        
@@ -39,7 +47,7 @@
         cursor: pointer;
  
         box-shadow: 0px 0px 5px 0px var(--blue);
-
+        margin-bottom: 69px;
         &:hover {
             background-color: var(--pale-blue);
         }
@@ -48,6 +56,30 @@
         @include mixins.desktop() {
             @include mixins.cuadro-borde(200px,56px);
             font-size: 16px;
+            margin-bottom: 86px;
+        }
+        &--error {
+            margin-bottom: 35px !important;
+            @include mixins.desktop() {
+                margin-bottom: 86px !important;
+            }
+        }
+    }
+    position: relative;
+    &__notification {
+        color: red;
+        font-size: 10px;
+        font-style: italic;
+        position: relative;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 18px;
+        @include mixins.desktop() {
+            position: absolute;
+            text-align: start;
+            font-size: 12.3px;
+            margin-top: 9px;
+            margin-left: 30px;
         }
     }
 

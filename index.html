@@ -26,8 +26,12 @@
         Subscribe and get notified
       </p>
       <form action="" class="form">
-        <input type="email" placeholder="Your email address..." class="form__input">
-        <button type="submit" class="form__button">Notify me</button>
+        <div class="input-container">
+          <input type="email" placeholder="Your email address..." class="form__input" id="inputCorreo" required>
+          <!--<p class="form__notification" id="notification"></p>-->
+        </div>
+        
+        <button type="submit" class="form__button" id="submit">Notify me</button>
       </form>
       <img src="images/illustration-dashboard.png" alt="illustration dashboard" class="suscribe__img">
     </article>

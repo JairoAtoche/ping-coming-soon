@@ -12,6 +12,7 @@
     --very-dark-blue: #{map-get(variables.$colors, 'very-dark-blue')};
     /* Others colors */
     --white: #{map-get(variables.$colors, 'white')};
+    --light-red: #{map-get(variables.$colors, 'light-red')};
 
     /* Font weight */
     --light: #{map-get(variables.$weight, 'light')};
