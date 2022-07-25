@@ -27,7 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+DESKTOP
+
+![ping-suscribe-desktop](https://user-images.githubusercontent.com/44626985/180886773-4855004b-ac59-4d26-804f-142d40c64172.png)
+
+MOBILE
+
+![ping-suscribe-mobile](https://user-images.githubusercontent.com/44626985/180886777-d85e762b-53e8-4786-bcb5-de26bd4489ee.png)
 
 ### Links
 
